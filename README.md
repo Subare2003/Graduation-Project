@@ -26,7 +26,7 @@
 
 ---
 
-## 🌍 Project Overview
+##  Project Overview
 
 The **Smart Air Quality & Attention Assistant** is designed to combat the silent accumulation of poor indoor environmental conditions (CO₂, VOCs, unbalanced temperature/humidity) that erode comfort, focus, and cognitive performance. 
 
@@ -46,7 +46,7 @@ This project was developed as the **CSC 497 Software Project** at the **College 
 - Nawaf A. Alfurhud 
 - Ayman A. Hakami 
 - Khaled A. Alshehri 
-- Haider A. Alhassan 
+- Haidar A. Alhassan 
 
 ---
 
@@ -60,7 +60,7 @@ The architecture is divided into three main components:
 
 ---
 
-## 🛠️ Hardware Requirements
+##  Hardware Requirements
 
 - **ESP32 Development Board** (e.g., 38-pin version)
 - **BME680 Environmental Sensor** (Temperature, Humidity, Pressure, Gas/VOCs via BSEC2 I2C: 0x76/0x77)
@@ -70,7 +70,7 @@ The architecture is divided into three main components:
 
 ---
 
-## 💻 Software Stack
+##  Software Stack
 
 - **Firmware:** C++ (Arduino IDE/PlatformIO), WiFiClientSecure, PubSubClient, Bosch BSEC2 Library.
 - **Web Dashboard:** PHP 8+, HTML5, CSS3 (Monochromatic/Clean UI), JavaScript, Chart.js, Canvas-Gauges, Paho-MQTT WS.
@@ -80,7 +80,7 @@ The architecture is divided into three main components:
 
 ---
 
-## ✨ Core Features
+##  Core Features
 
 - **High-Precision Telemetry:** Utilizes the Bosch BSEC2 algorithm to output a highly accurate IAQ (Indoor Air Quality) index, CO2 equivalent, and breath VOC equivalent.
 - **Dual-Channel Comm:** Fallback communication using both MQTT (real-time) and HTTP POST (historical persistence).
@@ -90,7 +90,7 @@ The architecture is divided into three main components:
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 
 The project uses two separate databases (or logical schemas) for separation of concerns:
 
@@ -101,7 +101,7 @@ The project uses two separate databases (or logical schemas) for separation of c
 
 ---
 
-## 🔌 API Documentation
+##  API Documentation
 
 The Web Layer exposes several internal APIs for the hardware and AI layers:
 
@@ -125,7 +125,7 @@ The Web Layer exposes several internal APIs for the hardware and AI layers:
 
 ---
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
 ### 1. Web Dashboard & API Setup
 1. Clone the web directory to your PHP server (e.g., Apache/Nginx).
@@ -148,7 +148,7 @@ The Web Layer exposes several internal APIs for the hardware and AI layers:
 
 ---
 
-## 🛡️ Security Features
+##  Security Features
 
 - **API Authentication:** Hardware and AI APIs are protected via static API Keys (`hash_equals` validation).
 - **Dashboard Guard:** All UI endpoints are protected by `auth_check.php` utilizing strict PHP session management with configurable inactivity timeouts.
@@ -156,4 +156,3 @@ The Web Layer exposes several internal APIs for the hardware and AI layers:
 - **Network Encryption:** MQTT payload is transmitted over TLS (Port 8883).
 
 ---
-*Developed with dedication by the KSU CCIS Spring 2026 Graduating Team.*
