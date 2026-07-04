@@ -9,7 +9,7 @@
 
 ---
 
-## 📖 Table of Contents
+##  Table of Contents
 1. [Project Overview](#-project-overview)
 2. [Academic Context & Team](#-academic-context--team)
 3. [System Architecture](#-system-architecture)
@@ -34,7 +34,7 @@ By leveraging an ESP32 microcontroller equipped with high-precision sensors (BME
 
 ---
 
-## 🎓 Academic Context & Team
+##  Academic Context & Team
 
 This project was developed as the **CSC 497 Software Project** at the **College of Computer and Information Sciences (CCIS), King Saud University (KSU)**.
 
@@ -50,7 +50,7 @@ This project was developed as the **CSC 497 Software Project** at the **College 
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The architecture is divided into three main components:
 
